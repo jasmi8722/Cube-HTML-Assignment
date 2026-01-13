@@ -26,4 +26,6 @@ A high-fidelity, fully responsive landing page built for the Cube HTML/CSS/JS As
 ## 💻 How to View
 
 1. **Local:** Simply clone the repo and open `index.html` in any browser.
-2. **Live Demo:** [Insert your GitHub Pages Link Here]
+2. **Live Demo:**
+   https://github.com/user-attachments/assets/bd71cffb-c2ef-4ab0-b041-71db0ba33e30
+   
