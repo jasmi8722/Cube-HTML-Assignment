@@ -1,0 +1,1329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #ffffff; 
+}
+
+/*---- Navbar Styling ----*/
+.navbar-wrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+/* Navbar container */
+.navbar {
+  position: relative;
+  max-width: 1326px;
+  height: 72px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* GTG Gradient Logo */
+.logo {
+  font-weight: 600;
+  font-size: 30px;
+  opacity: 0.6; 
+  background: linear-gradient(
+    180deg,
+    #032E15 0%,
+    #016630 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+/* Menu */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #162456;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #1a6f3c;
+}
+
+#chevron-down {
+  color: #032E15;
+}
+/* Right section */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-icon {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;    
+  color: #032E15;
+  cursor: pointer;
+  user-select: none;
+}
+
+.search-icon:hover {
+  color: #016630;
+}
+
+/* CTA Button */
+.cta-btn {
+  width: 145px;
+  height: 49px;
+  background: linear-gradient(
+    180deg,
+    #032E15 0%,
+    #016630 100%
+  );
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.cta-btn:hover {
+  opacity: 0.9;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  color: #032E15;
+  cursor: pointer;
+}
+
+/* ======== Hero Styling */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("assets/hero-image.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: flex;
+
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 1326px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center; 
+}
+
+.hero-content {
+  max-width: 692px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; 
+}
+
+/* Award Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  width: 380px;
+  height: 40px;
+  gap: 8px;
+  color: white;
+   background: linear-gradient(
+    180deg,
+    #032E15 0%,
+    #016630 100%
+  );
+  opacity: 0.6;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hero-content h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 112.2%;      
+  letter-spacing: -1.33px; 
+  color: #032E15;
+}
+
+.stats {
+  display: flex;
+  gap: 24px;
+}
+
+.stats > div {
+  display: flex;
+  flex-direction: column;
+  width: 184px;
+}
+
+.hero-stats {
+  font-size: 72px;
+  font-weight: 700;
+  color: #032E15;
+  opacity: 0.6; 
+  background: linear-gradient(
+    180deg,
+    #032E15 0%,
+    #016630 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.hero-stats-sub {
+  font-size: 22px;
+  color: #0D542B
+}
+
+.hero-btn {
+  width: 185px;
+  height: 48px;
+  padding: 12px 28px;
+  background: linear-gradient(180deg, #032E15 0%, #016630 100%);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.hero-btn:hover{
+  opacity: 0.9;
+}
+
+/* ======== Perfume Section Styling */
+.perfume-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px; /* Added padding to prevent touching screen edges */
+  box-sizing: border-box;
+}
+
+.main-perfume-cont {
+  width: 100%;
+  max-width: 1328px;
+  height: auto;
+  margin: 73px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px; /* Ensures a consistent gap between image and details */
+}
+
+.right-div-image{
+  flex: 1; 
+  max-width: 610px;
+  min-width: 320px; /* Prevents it from getting too small */
+}
+
+.left-div-details {
+  flex: 1;
+  max-width: 610px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main-image {
+  width: 100%;
+  height: 672px; /* Keep height for desktop feel */
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  border-radius: 16px;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnail-row {
+ display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px; /* Slightly reduced for better desktop scaling */
+  margin-top: 24px;
+}
+
+.thumbnail-row img {           
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Container to hold main image and controls */
+.slider-wrapper {
+  position: relative;
+  width: 100%; 
+  margin-bottom: 45px;
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 28px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  margin-top: -74px; /* Pulls the bar up over the bottom of the image */
+  position: relative;
+  z-index: 10;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: none;
+  border: 1.5px solid #032E15; /* The dark green border from your design */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+/* Dots */
+.pagination-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #032E15;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #032E15; /* Matching your title color */
+}
+
+.left-div-details {
+  width: 610px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns text to the left */
+}
+
+.gtg-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #032E15;
+  margin-bottom: 8px; /* Reduced margin to bring stars closer */
+}
+
+/* Rating Styles */
+.rating-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.stars {
+  color: #008a45; /* Your brand green */
+  display: flex;
+  gap: 6px;
+}
+
+.stars i {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.rating-text {
+  font-size: 14px;
+  color: #032E15; /* Gray color for the review count */
+
+}
+
+/* Description Styles */
+.perfume-description {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  color: #032E15;
+  width: 100%;
+  margin: 0;
+}
+
+/* Container for the whole purchase area */
+.subscription-container {
+    width: 100%;
+    margin-top: 20px;
+    min-height: 772px;
+}
+
+/* Base Card Style */
+.sub-card {
+    border: 1px solid #B8B8B8;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+}
+.sub-name{
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.9px;
+}
+
+/* Most Popular Green Bar */
+.most-popular-badge {
+     background: linear-gradient(90deg, #00C950 0%, #008236 52%, #032E15 100%);
+    color: white;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    padding: 8px 0;
+    font-size: 20px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Custom Radio Buttons */
+.radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+}
+
+.radio-label input { display: none; }
+
+/* 1. The outer circle (The Stroke) */
+.custom-radio {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc; 
+    border-radius: 50%;
+    margin-right: 12px;
+    position: relative;
+    background: #F8F8F8; 
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+/* 2. When Checked: Apply Gradient Border */
+.radio-label input:checked + .custom-radio {
+    border-color: transparent;
+    background: 
+        linear-gradient(#F8F8F8, #F8F8F8) padding-box, 
+        linear-gradient(180deg, #032E15 0%, #016630 100%) border-box;
+    border: 2px solid transparent;
+}
+
+/* 3. The inner green dot (The Fill) */
+.radio-label input:checked + .custom-radio::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(180deg, #032E15 0%, #016630 100%);
+}
+
+.radio-label:hover .custom-radio {
+    border-color: #032E15;
+}
+.price-box .current-price {
+    font-size: 20px;
+    font-weight: 800;
+    color: #032E15;
+    line-height: 30px;
+  letter-spacing: 0.9px;
+}
+
+.price-box .old-price {
+  font-size: 20px;
+    text-decoration: line-through;
+    color: #bbb;
+    margin-left: 5px;
+    line-height: 30px;
+  letter-spacing: 0.9px;
+   font-weight: 200;
+   font-family: 'Inter', sans-serif;
+}
+
+.section-label{
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Expandable Details Area */
+.card-details {
+    padding:0px 20px 20px 20px;
+    display: none; /* Hidden by default */
+}
+
+.sub-card.active .card-details {
+    display: block; /* Shown when card is active */
+}
+
+/* Contaboxer styling */
+.fragrance-options {
+    display: flex;
+    gap: 12px; 
+    margin-top: 15px;
+}
+
+.frag-item {
+    position: relative;
+    display: block;
+}
+
+.frag-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    width: 128px; 
+    height: 145px;
+
+    border-radius: 8px;
+    background: #F9F9F9;
+    padding-top: 20px; 
+}
+
+/* Radio Button at Top-Left */
+.frag-item input[type="radio"] {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    margin: 0;
+    z-index: 5;
+    accent-color: #1B4D3E;
+}
+
+/* Text next to the radio button */
+.frag-name {
+    position: absolute;
+    top: 10px;
+    left: 32px; 
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Image stays centered in the middle of the box */
+.frag-content img {
+    width: 54px;
+    height: 94px;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+/* BEST SELLER Badge */
+.best-seller {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-20%);
+    background: linear-gradient(90deg, #00C950 0%, #008236 52%, #032E15 100%);
+    color: white;
+    font-size: 8px;
+    padding: 2px 8px;
+    font-weight: bold;
+    z-index: 10;
+    white-space: nowrap; 
+    border-radius: 8px 0 8px 0; 
+}
+
+/* Parent Container */
+.included-preview {
+    display: flex;
+    flex-wrap: wrap; 
+  gap: 16px;
+  margin-top: 20px;
+}
+
+/* Base Box Style */
+.inc-box {
+    flex: 1;
+    min-width: 150px;
+    max-width: 166px;
+    height: 218px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #919798;
+    padding: 16px;
+    box-sizing: border-box;
+    position: relative;
+    /* Standard Box Dimensions */
+    width: 166px;
+    height: 218px;
+}
+
+/* Highlight Box (Wider version) */
+.inc-box.highlight {
+  flex: 2;
+  min-width: 280px;
+  max-width: 324px;
+  height: 218px;
+    width: 324px;
+    height: 218px;
+    background: #FFFFFF;
+    border: 1px solid #919798;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+/* Text Styling at the top */
+.inc-box span {
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+}
+
+.inc-box span strong {
+    color: #1B4D3E;
+}
+
+/* Standard Image Styling */
+.inc-box img {
+    width: 84px;
+    height: 144px;
+    object-fit: contain;
+}
+
+/* Highlight Image Styling */
+.inc-box.highlight img {
+    width: 256px;
+    height: 94px;
+    object-fit: contain;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.benefit-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Vertical gap between list items */
+}
+
+.benefit-list li {
+    display: flex;
+    align-items: flex-start; 
+    gap: 6px; 
+    font-size: 14px;
+    color: #032E15;
+    line-height: 1.4;
+    letter-spacing: 0.9px;
+    color: #333;
+}
+
+.check-icon {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+}
+
+.benefit-list li strong {
+    font-weight: 700;
+    color: #000; 
+}
+
+/* Main Button */
+.main-add-btn {
+    width: 100%;
+     background: linear-gradient(
+    180deg,
+    #032E15 0%,
+    #016630 100%
+  );
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.main-add-btn:hover {
+    opacity: 0.9;
+}
+
+/* ======== Our Collection Section Styling */
+.our-collection-cont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 112px;
+  max-width: 1327px; 
+  align-items: center;
+    margin: 73px auto;
+}
+
+.collection-content-wrapper {
+  flex: 1;
+  min-width: 320px;
+  max-width: 626px;
+  height: auto; 
+}
+
+.collection-image-wrapper {
+  flex: 1;
+  min-width: 320px;
+  max-width: 590px;
+}
+
+.collection-image-wrapper img {
+  width: 100%;
+  height: 711px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.collection-title {
+  font-size: 36px;
+  color: #1B4D3E;
+  margin-bottom: 30px;
+}
+
+/* Accordion Styling */
+.accordion-item {
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  color: #1B4D3E;
+  background: #fff;
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 20px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.accordion-item.active .accordion-body {
+  max-height: 200px;
+  padding-bottom: 20px;
+}
+
+/* ===== Trust Section ======= */
+.trust-section {
+  background: linear-gradient(
+    180deg,
+    #032E15 0%,
+    #016630 100%
+  );
+  padding: 60px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.trust-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1458px;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap; 
+}
+
+.trust-item {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.trust-item h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin: 0 0 10px 0;
+  font-family: sans-serif;
+}
+
+.trust-item p {
+  font-size: 16px;
+  line-height: 1.4;
+  opacity: 0.9;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+/* ======= Comparision Section / Table Styling */
+.comparison-section {
+  padding: 80px 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.comparison-container {
+  width: 100%;
+  max-width: 950px; 
+  text-align: center;
+}
+
+.comparison-title {
+  font-size: 36px;
+  color:#032E15;
+  margin-bottom: 40px;
+}
+
+.table-responsive-wrapper {
+  overflow-x: auto;
+  margin-bottom: 40px;
+  border-radius: 12px;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px; 
+}
+
+/* Targets the "Qualities" column (first column) in the body */
+.comparison-table tbody td:first-child {
+  text-align: left;
+  padding-left: 0; 
+  font-weight: 500; 
+  color: #4A4A4A;   
+}
+
+/* Ensure the header "Qualities" is also left-aligned */
+.comparison-table th.col-label {
+  text-align: left;
+  padding-left: 0;
+}
+
+/* Row & Cell Styling */
+.comparison-table th, 
+.comparison-table td {
+  padding: 20px 15px;
+  border-bottom: 1px solid #E0E0E0;
+  text-align: center;
+  font-size: 15px;
+}
+
+.col-label {
+  text-align: left !important;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Can add hover effect for each column if neede */
+/* Highlighting the GTG Column */
+.col-highlight {
+  background-color: #F1F9F6;
+}
+
+/* Highlighting the GTG Column */
+.col-highlight-header {
+    background-color: #F1F9F6; 
+  border-radius: 12px 12px 0px 0px;
+}
+
+.brand-header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* CTA Button */
+.cta-risk-free {
+   width: auto; 
+    min-width: 194px; /* Ensures it doesn't get too small for the text */
+    max-width: 60%;
+  
+     background: linear-gradient(
+    180deg,
+    #032E15 0%,
+    #016630 100%
+  );
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cta-risk-free:hover{
+ opacity: 0.9;
+}
+
+/* ==== Footer Styling */
+.main-footer {
+  background-color: #03251A;
+  color: #ffffff;
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-brand {
+  width: 100%;
+  max-width: 1460px;
+  text-align: left;
+
+}
+
+.footer-logo {
+  font-size: 48px; 
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.footer-container {
+  max-width: 1460px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly; 
+  gap: 40px; 
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+/* Newsletter Section Styles */
+.newsletter-col {
+  flex: 2; 
+  max-width: 450px;
+}
+
+.newsletter-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0; /* Connected look */
+  margin-bottom: 15px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 12px 15px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 4px 0 0 4px;
+}
+
+.newsletter-form button {
+  padding: 12px 25px;
+  background-color: #7E4A1A; 
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  font-weight: 600;
+}
+
+.legal-text {
+  font-size: 11px;
+  opacity: 0.6;
+  line-height: 1.5;
+}
+
+.legal-text a {
+  color: white;
+  text-decoration: underline;
+}
+
+
+/* Tablet - Responsive */
+@media (max-width: 1024px) {
+  .nav-links {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 32px 0;
+    display: none;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .cta-btn {
+    display: none; /* optional */
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Hero Style */
+  .hero {
+    height: auto;
+    min-height: 700px;
+    background-position: right 60% center; 
+  }
+
+  .hero-content h1 {
+    font-size: 48px; /* Slightly smaller */
+  }
+
+  .hero-stats {
+    font-size: 60px; /* Scale down stats */
+  }
+
+  /* Perfume-Section */
+  .main-perfume-cont {
+    flex-direction: column; 
+    align-items: center;
+    gap: 40px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .right-div-image, 
+  .left-div-details,
+  .slider-wrapper,
+  .main-image {
+    width: 100%; 
+    max-width: 700px; 
+  }
+
+  .main-image {
+    height: 500px; 
+  }
+
+  /* Our-Collection-Section */
+  .our-collection-cont {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .collection-image-wrapper img {
+    height: auto;
+  }
+}
+
+/* Phone - Responsive */
+@media (max-width: 768px) {
+
+  /* ---------------- HERO SECTION ---------------- */
+  .hero {
+    padding: 40px 0;
+    background-position: right 20% center;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .hero-container {
+    align-items: flex-start;
+    padding-top: 80px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .badge {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    font-size: 14px;
+    padding: 10px 20px;
+    justify-content: center;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .stats {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .stats > div {
+    width: 120px;
+  }
+
+  .hero-stats {
+    font-size: 48px;
+  }
+
+  .hero-stats-sub {
+    font-size: 18px;
+  }
+
+  /* ---------------- PERFUME SECTION ---------------- */
+  .main-perfume-cont {
+  flex-direction: column; 
+  align-items: center;   
+  margin: 20px auto;      
+  gap: 30px;
+}
+
+.right-div-image, 
+.left-div-details,
+.slider-wrapper {
+  width: 100% !important; /* Force width to match the phone screen */
+  max-width: 100%;        /* Ensure no overflow */
+  height: auto;
+}
+
+.main-image {
+  width: 100%;
+  height: 400px;         /* Give it a reasonable height on mobile */
+}
+
+/* Ensure the details align to the center for mobile readability */
+.left-div-details {
+  align-items: center;   /* Centers the title, stars, and buttons */
+  text-align: center;
+}
+  .gtg-title {
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .rating-container {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .perfume-description {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .thumbnail-row {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .fragrance-options {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .frag-content {
+    width: 100px;
+    height: 120px;
+  }
+
+  /* ---------------- INCLUDED PREVIEW ---------------- */
+  .included-preview {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inc-box,
+  .inc-box.highlight {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .inc-box.highlight img {
+    width: 200px;
+    margin-top: 15px;
+  }
+
+/* ---------------- OUR COLLECTION SECTION ---------------- */
+  .our-collection-cont {
+    flex-direction: column-reverse; /* Image on top, text below for better flow */
+    gap: 32px;                     /* Reduced massive 112px gap */
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .collection-image-wrapper, 
+  .collection-content-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: unset;
+  }
+
+  .collection-image-wrapper img {
+    height: 350px;                 /* Force height to be smaller on mobile */
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  .collection-title {
+    font-size: 28px;               /* Scaled down for smaller screens */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .accordion-header {
+    padding: 15px;
+    font-size: 18px;               /* Slightly smaller text */
+  }
+
+  .accordion-body {
+    font-size: 14px;
+    line-height: 1.5;             
+  }
+   .trust-item {
+    flex: 0 0 45%; 
+    margin-bottom: 30px;
+  }
+}
+
+/* Small Phone - Responsive */
+@media (max-width: 480px) {
+  .main-image {
+    height: 350px; 
+  }
+
+  .slider-controls {
+    padding: 10px 15px;
+    margin-top: -60px;
+  }
+
+  .sub-name {
+    font-size: 16px; /* Shrink text to prevent price overlap */
+  }
+  
+  .current-price {
+    font-size: 18px;
+  }
+
+  .collection-image-wrapper img {
+    height: 250px;                 
+  }
+
+  .trust-item {
+    flex: 0 0 100%; /* Stacks 1 per row on phones */
+  }
+
+   .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter-form input, 
+  .newsletter-form button {
+    border-radius: 4px;
+  }
+  
+}
